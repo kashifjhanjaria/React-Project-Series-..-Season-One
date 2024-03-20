@@ -6,7 +6,7 @@ import { ThemeContext } from '../context/ThemeContext'
 const RouteLayout = () => {
   const [theme] = useContext(ThemeContext);
   return (
-   <div className={`${theme ? "bg-gray-900 text-white" : "bg-gray-300"}`}>
+   <div className={`overflow-hidden ${theme ? "bg-gray-900 text-white " : "bg-gray-300 " }`}>
  <div className='flex justify-center'>
  <Navbar/>
  </div>

@@ -11,6 +11,8 @@ import Popup from './pages/popup/Popup'
 import RandomUser from './pages/randomuser/RandomUser'
 
 import KeyCode from './pages/keycode/KeyCode'
+import PinterestSearch from './search/PinterestSearch'
+import { Sidebar } from './sidebar/Sidebar'
 
 
 
@@ -27,6 +29,8 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='popup' element={<Popup/>}/>
     <Route path='randomuser' element={<RandomUser/>}/>
     <Route path='keycode' element={<KeyCode/>}/>
+    <Route path='pinterestsearch' element={<PinterestSearch/>}/>
+    <Route path='sidebar' element={<Sidebar/>}/>
    
    
   
