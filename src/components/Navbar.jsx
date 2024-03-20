@@ -28,6 +28,17 @@ const Navbar = () => {
             className={active => (active.isActive ? "bg-pink-500 py-1 px-4 rounded-lg text-white font-semibold" : null)}
             to="/popup">PopUp</NavLink>
         </li>
+        <li>
+          <NavLink
+            className={active => (active.isActive ? "bg-pink-500 py-1 px-4 rounded-lg text-white font-semibold" : null)}
+            to="/randomuser">Random User</NavLink>
+        </li>
+       
+        <li>
+          <NavLink
+            className={active => (active.isActive ? "bg-pink-500 py-1 px-4 rounded-lg text-white font-semibold" : null)}
+            to="/keycode">Keycode</NavLink>
+        </li>
         
 
       </ul></div>

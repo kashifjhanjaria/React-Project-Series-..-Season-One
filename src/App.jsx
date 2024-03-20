@@ -8,6 +8,9 @@ import Theme from './pages/theme/Theme'
 import ThemeContextState from './context/ThemeContextState'
 import ColorChange from './pages/color/ColorChange'
 import Popup from './pages/popup/Popup'
+import RandomUser from './pages/randomuser/RandomUser'
+
+import KeyCode from './pages/keycode/KeyCode'
 
 
 
@@ -22,6 +25,9 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='theme' element={<Theme/>}/>
     <Route path='color' element={<ColorChange/>}/>
     <Route path='popup' element={<Popup/>}/>
+    <Route path='randomuser' element={<RandomUser/>}/>
+    <Route path='keycode' element={<KeyCode/>}/>
+   
    
   
 
