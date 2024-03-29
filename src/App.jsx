@@ -13,10 +13,20 @@ import RandomUser from './pages/randomuser/RandomUser'
 import KeyCode from './pages/keycode/KeyCode'
 import PinterestSearch from './search/PinterestSearch'
 import { Sidebar } from './sidebar/Sidebar'
+import Auth from './pages/auth/Auth'
+import Register from './pages/auth/Register'
+import Login from './pages/auth/Login'
+import AuthContextState from './context/AuthContextState'
+import { useEffect } from 'react'
+import TodoList from './pages/todo/TodoList'
+
 
 
 
 function App() {
+ 
+  const isauthenticated = JSON.parse(localStorage.getItem('auth')) ??  false ;
+  console.log(isauthenticated, 'App');
  
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<RouteLayout/>}>
@@ -31,18 +41,28 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='keycode' element={<KeyCode/>}/>
     <Route path='pinterestsearch' element={<PinterestSearch/>}/>
     <Route path='sidebar' element={<Sidebar/>}/>
+    <Route path='todo' element={<TodoList/>}/>
+    {/* <Route path='/auth' element={<Auth isauthenticated={isauthenticated.isloggged}/>}>
+      <Route path='register' element={<Register/>}/>
+      <Route path='login' element={<Login/>}/>
+    </Route> */}
    
    
   
 
   </Route>
+
+
+
 ))
 
 
   return (
     <>
     <ThemeContextState>
+      <AuthContextState>
     <RouterProvider router={router}/>
+    </AuthContextState>
     </ThemeContextState>
      
     </>

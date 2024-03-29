@@ -52,6 +52,16 @@ const Navbar = () => {
             className={active => (active.isActive ? "bg-pink-500 py-1 px-4 rounded-lg text-white font-semibold" : null)}
             to="/sidebar">Sidebar (9)</NavLink>
         </li>
+        {/* <li>
+          <NavLink
+            className={active => (active.isActive ? "bg-pink-500 py-1 px-4 rounded-lg text-white font-semibold" : null)}
+            to="/auth">Auth (10)</NavLink>
+        </li> */}
+        <li>
+        <NavLink
+          className={active => (active.isActive ? "bg-pink-500 py-1 px-4 rounded-lg text-white font-semibold" : null)}
+          to="/todo">Todo (11)</NavLink>
+      </li>
         
 
       </ul></div>

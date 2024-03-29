@@ -10,11 +10,11 @@ const RouteLayout = () => {
  <div className='flex justify-center'>
  <Navbar/>
  </div>
-    <div className='flex bg-gray-700 justify-center w-full ' style={{height:"calc(100vh - 100px)"}}>
+    <div className=' flex bg-gray-700 justify-center w-full ' style={{minHeight:"600px"}}>
     <Outlet/>
     </div>
       <div
-      className={`h-[50px] flex justify-center items-center  font-semibold ${theme ? "bg-gray-900 text-white" : "bg-gray-300"}`} 
+      className={`fixed bottom-0 w-full h-[50px] flex justify-center items-center  font-semibold ${theme ? "bg-gray-900 text-white" : "bg-gray-300"}`} 
 >
         <h2 >Footer</h2></div>
    </div>
